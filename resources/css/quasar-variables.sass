@@ -1,0 +1,146 @@
+$primary: #1316df
+$secondary: #26A69A
+$accent: #9C27B0
+
+$dark: #1D1D1D
+
+$positive: #21BA45
+$negative: #C10015
+$info: #31CCEC
+$warning: #F2C037
+
+$gries: #59656F
+$mutan: #F4F3EE
+$bluies: #0277CA
+$dbrem: #DD7B7B
+$grey-light: #D1D1CC
+
+$bp-xs-min: 0px
+$bp-xs-max: 599.99px
+
+$bp-sm-min: 600px
+$bp-sm-max: 1023.99px
+
+$bp-md-min: 1024px
+$bp-md-max: 1439.99px
+
+$bp-lg-min: 1440px
+$bp-lg-max: 1919.99px
+
+$bp-xl-min: 1920px
+$bp-xl-max: 5999.99px
+
+a
+    text-decoration: none !important
+    color: inherit
+body
+    background: $mutan !important
+.text-negative
+    color: $negative !important
+.text-dbrem
+    color: $dbrem !important
+.bg-dbrem
+    background: $dbrem !important
+.text-gries
+    color: $gries !important
+.bg-gries
+    background: $gries !important
+.border-gries
+    background-color: $gries !important
+.text-mutan
+    color: $mutan !important
+.bg-mutan
+    background: $mutan !important
+.text-bluies
+    color: $bluies !important
+.bg-bluies
+    background: $bluies !important
+.bg-grey-light
+    background: $grey-light !important
+.text-center
+    text-align: center
+.text-end
+    text-align: end
+.text-size-8
+    font-size: 8px !important
+.text-size-10
+    font-size: 10px !important
+.text-size-12
+    font-size: 12px !important
+.text-font-size-small
+    font-size: small
+
+.bg-common
+    background: rgba(0, 0, 0, 0.05)
+
+.bg-none
+    background-color: rgba(0, 0, 0, 0)
+.bg-none-05
+    background-color: rgba(0, 0, 0, 0.5)
+
+.max-width-screen
+    @media only screen and (min-width: $bp-xs-min) and (max-width: $bp-xs-max)
+        max-width: $bp-xs-min
+    @media only screen and (min-width: $bp-sm-min) and (max-width: $bp-sm-max)
+        max-width: $bp-sm-min
+    @media only screen and (min-width: $bp-md-min) and (max-width: $bp-md-max)
+        max-width: $bp-xs-max
+    @media only screen and (min-width: $bp-lg-min) and (max-width: $bp-lg-max)
+        max-width: $bp-sm-max
+    @media only screen and (min-width: $bp-xl-min) and (max-width: $bp-xl-max)
+        max-width: $bp-md-max
+
+div.carusel-height-screen
+    @media only screen and (min-width: $bp-xs-min) and (max-width: $bp-xs-max)
+        height: 167px
+    @media only screen and (min-width: $bp-sm-min) and (max-width: $bp-sm-max)
+        height: 275px
+    @media only screen and (min-width: $bp-md-min) and (max-width: $bp-md-max)
+        height: 400px
+    @media only screen and (min-width: $bp-lg-min) and (max-width: $bp-lg-max)
+        height: 400px
+    @media only screen and (min-width: $bp-xl-min) and (max-width: $bp-xl-max)
+        height: 400px
+
+.max-width-calc
+    max-width: calc(100vw - 190px)
+
+.list
+    overflow: hidden
+    max-height: 0
+    transition: max-height 1s ease-in-out
+
+.list.full
+    max-height: 1000px
+    transition: max-height 1s ease-in-out
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// input:-webkit-autofill:active
+//     transition: background-color 5000s ease-in-out 0s
+//     -webkit-text-fill-color: #000 !important
+
+input:-webkit-autofill
+    -webkit-box-shadow: 0 0 0px 1000px #F4F3EE inset !important
+
+.q-mb-20
+    margin-bottom: 20px
+
+.border-gries-0
+    border: 1px solid $gries
+    border-radius: 0
+.border-bottom-gries-0
+    border-bottom: 1px solid $gries
+    border-radius: 0
+.border-gries-4
+    border: 1px solid $gries
+    border-radius: 4px
+.border-ccc-4
+    border: 1px solid #ccc
+    border-radius: 4px
+.border-bottom-grey-light-0
+    border-bottom: 1px solid $grey-light
+    border-radius: 0
+.background-none
+    background: none !important

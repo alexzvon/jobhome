@@ -33,3 +33,32 @@
 - Создать `README.md` и описать как запустить приложение
 - Запушить задание на GitHub
 - Прислать ссылку на репозиторий
+
+
+
+
+
+# Запуск приложения
+> git clone git@github.com:alexzvon/jobhome.git
+
+> cd jobhome
+
+> composer install
+
+> cat .env.example > .env
+
+> php artisan key:generate
+
+> php artisan migrate
+
+## На вопрос - Would you like to create it? - отвечеам Yes
+
+> pnpm install
+
+> pnpm build
+
+> php artisan serve
+
+## Набираем в браузере "localhost:8000"
+
+
